@@ -4,14 +4,14 @@ db.employees.insertMany([
   {
     name: "smit sapariya",
     department: "IT",
-    salary: 65000,
-    age: 20
+    salary: 75000,
+    age: 28
   },
   {
     name: "meet",
     department: "HR",
     salary: 45000,
-    age: 21
+    age: 55
   },
   {
     name: "zeel makvana",
@@ -23,7 +23,7 @@ db.employees.insertMany([
     name: "kartik vala",
     department: "IT",
     salary: 40000,
-    age: 26
+    age: 45
   },
   {
     name: "upen sapariya",
@@ -32,17 +32,17 @@ db.employees.insertMany([
     age: 24
   },
   {
-    name: "rajesh",
+    name: "Rahul",
     department: "Sales",
     salary: 42000,
-    age: 26
+    age: 40
   }
 ]);
 
 // Exercise 02
 db.employees.find({ department: "IT" });
 
-db.employees.find({ name: "rajesh" });
+db.employees.find({ name: "Rahul" });
 
 // Exercise 03
 db.employees.find().pretty();
@@ -63,3 +63,4 @@ db.employees.find({ age: { $lte: 25 } });
 db.employees.find({
   salary: { $gte: 40000, $lte: 80000 }
 });
+
